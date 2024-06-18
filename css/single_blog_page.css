@@ -1,0 +1,101 @@
+/*--- single_blg_pg_sec_1 css start ---*/
+.single_blg_pg_sec_1 .single_blg_sec_1_container {
+  /* justify-content: space-between; */
+  gap: 4rem;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper {
+  max-width: 220px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .content_col_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white_txt_bg_clr);
+  padding-block: 2.5rem;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .inner_content {
+  gap: 1.25rem;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .inner_content > span {
+  color: var(--secondary_head_clr);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .author_profile {
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .author_profile > a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--primary_heading_clr);
+  font-family: var(--oswald_font-family);
+  display: flex;
+  align-items: center;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .inner_content .social_links {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single_blg_pg_sec_1 .lft_col_wrapper .inner_content .social_links a:hover path,
+.single_blg_pg_sec_1
+  .mid_col_wrapper
+  .inner_col_1_wrapper
+  .social_links
+  a:hover
+  path {
+  fill: color-mix(
+    in hsl shorter hue,
+    rgba(237, 228, 109, 0.909) 100%,
+    rgba(236, 226, 95, 0.963) 100%
+  );
+}
+
+/* mid_col_css */
+.single_blg_pg_sec_1 .mid_col_wrapper {
+  max-width: 590px;
+  width: 100%;
+  gap: 1.8rem;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .inner_col_1_wrapper {
+  gap: 1.8rem;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .inner_col_1_wrapper h1 {
+  color: var(--secondary_head_clr);
+  font-family: var(--oswald_font-family);
+  font-weight: 500;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .inner_col_1_wrapper .social_links {
+  max-width: 250px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .social_links .share_wrap{
+    gap: .5rem;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .social_links .share_wrap > span {
+  color: var(--secondary_head_clr);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .social_links .share_wrap > img {
+  width: 18px;
+  height: 18px;
+}
+.single_blg_pg_sec_1 .mid_col_wrapper .social_links .icon_wrap {
+  max-width: 150px;
+  width: 100%;
+  justify-content: space-between;
+}
+/*--- single_blg_pg_sec_1 css end ---*/

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/blog_page.css">
 </head>
 
 <body>
@@ -35,166 +36,385 @@
         </div>
     </header>
     <main>
-        <!-- global_latest_article -->
-        <section class="global_latest_article">
-            <div class="latst_article_container container_1200 flex_column">
-                <!-- global_txt_hor_line -->
-                <div class="global_txt_horline flex_row">
-                    <span>Latest Articles</span>
-                    <div class="hrline"></div>
+        <!-- breadcrumbs -->
+        <nav class="breadcrumb_container container_1200  flex_row">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="" href="index.html">Home</a></li>
+                <span> </span>
+                <li class="breadcrumb-item"><a class="" href="blog_page.html">Blog Page</a></li>
+            </ol>
+        </nav>
+
+        <!-- blog_page_sec_1 -->
+        <section class="blog_pag_sec_1">
+            <div class="blg_pag_sec_1_container container_1200 flex_row">
+                <!-- inner_lft_col -->
+                <div class="lft_col_container flex_column">
+                    <!-- filter_wrapper -->
+                    <div class="filter_wrapper flex_row">
+                        <!-- global white_btn button -->
+                        <a href="" class="white_btn global_btn">Uses</a>
+                        <a href="" class="white_btn global_btn">Features</a>
+                        <a href="" class="white_btn global_btn">Material</a>
+                        <a href="" class="white_btn global_btn">Types</a>
+                    </div>
+                    <!-- articles_wrapper -->
+                    <div class="inner_article_blg_pg global_latest_article">
+                        <div class="inner_articles_wrapper grid_row">
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_1.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_2.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_3.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_4.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_1.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_2.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_3.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_1.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- article_1 -->
+                            <div class="article_post_wrap flex_column">
+                                <div class="artic_img">
+                                    <a href=""><img src="assets/artic_2.png" alt=""></a>
+                                </div>
+                                <div class="inner_col_2 flex_column">
+
+                                    <div class="inner_txt_content flex_column">
+                                        <a href=""><span>Kitchen</span></a>
+                                        <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
+                                    </div>
+                                    <!-- global_author_info -->
+                                    <div class="global_author_info flex_row">
+                                        <div class="inner_lft flex_row">
+                                            <a href=""><img src="assets/rick_andrew.png" alt=""></a>
+                                            <a href=""><span>Rick Andrew</span></a>
+                                        </div>
+
+                                        <div class="inner_ryt flex_row">
+                                            <img class="w_auto" src="assets/calendar.svg" alt="">
+                                            <span>15 Jan 2024</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- pagination_bar -->
+                    <div class="pagination_bar flex_row">
+                        <div class="lft_pg_no">
+                            <ul class="pagination">
+                                <li class="page_item"><a class="page-link" href="#">1</a></li>
+                                <li class="page_item"><a class="page-link" href="#">2</a></li>
+                                <li class="page_item"><a class="page-link" href="#"><img class="w_auto"
+                                            src="assets/arrow_pagination.svg" alt=""></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="ryt_content flex_row">
+                            Page 1 of 2
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- inner_ryt_col -->
+
+                <!-- add_global_Most_read_articles -->
+                <div class="global_most_read_post global_latest_article ">
+                    <div class="global_most_read_container flex_column">
+                        <!-- advertisement -->
+                        <img class="w_auto" src="assets/advert.png" alt="">
+                        <!-- Most_read_article -->
+                        <div class="inner_most_read_wrapper flex_column">
+                            <!-- global_txt_hor_line -->
+                            <div class="global_txt_horline flex_row">
+                                <span>Most Read</span>
+                                <div class="hrline"></div>
+                            </div>
+
+                            <div class="inner_articles_wrapper grid_row">
+                                <!-- article_1 -->
+                                <div class="article_post_wrap flex_row">
+                                    <div class="artic_img">
+                                        <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
+                                    </div>
+                                    <div class="inner_col_2 flex_column">
+
+                                        <div class="inner_txt_content flex_column">
+                                            <a href=""><span>Kitchen</span></a>
+                                            <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- article_1 -->
+                                <div class="article_post_wrap flex_row">
+                                    <div class="artic_img">
+                                        <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
+                                    </div>
+                                    <div class="inner_col_2 flex_column">
+
+                                        <div class="inner_txt_content flex_column">
+                                            <a href=""><span>Kitchen</span></a>
+                                            <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- article_1 -->
+                                <div class="article_post_wrap flex_row">
+                                    <div class="artic_img">
+                                        <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
+                                    </div>
+                                    <div class="inner_col_2 flex_column">
+
+                                        <div class="inner_txt_content flex_column">
+                                            <a href=""><span>Kitchen</span></a>
+                                            <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- article_1 -->
+                                <div class="article_post_wrap flex_row">
+                                    <div class="artic_img">
+                                        <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
+                                    </div>
+                                    <div class="inner_col_2 flex_column">
+
+                                        <div class="inner_txt_content flex_column">
+                                            <a href=""><span>Kitchen</span></a>
+                                            <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="inner_articles_wrapper grid_row">
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_1.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                            <!-- global_author_info -->
-                            <div class="global_author_info flex_row">
-                                <div class="inner_lft flex_row">
-                                    <a href=""><img src="assets/rick_andrew.png" alt=""></a>
-                                    <a href=""><span>Rick Andrew</span></a>
-                                </div>
-
-                                <div class="inner_ryt flex_row">
-                                    <img class="w_auto" src="assets/calendar.svg" alt="">
-                                    <span>15 Jan 2024</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_2.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
-                            </div>
-                            <!-- global_author_info -->
-                            <div class="global_author_info flex_row">
-                                <div class="inner_lft flex_row">
-                                    <a href=""><img src="assets/rick_andrew.png" alt=""></a>
-                                    <a href=""><span>Rick Andrew</span></a>
-                                </div>
-
-                                <div class="inner_ryt flex_row">
-                                    <img class="w_auto" src="assets/calendar.svg" alt="">
-                                    <span>15 Jan 2024</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_3.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                            <!-- global_author_info -->
-                            <div class="global_author_info flex_row">
-                                <div class="inner_lft flex_row">
-                                    <a href=""><img src="assets/rick_andrew.png" alt=""></a>
-                                    <a href=""><span>Rick Andrew</span></a>
-                                </div>
-
-                                <div class="inner_ryt flex_row">
-                                    <img class="w_auto" src="assets/calendar.svg" alt="">
-                                    <span>15 Jan 2024</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_4.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                            <!-- global_author_info -->
-                            <div class="global_author_info flex_row">
-                                <div class="inner_lft flex_row">
-                                    <a href=""><img src="assets/rick_andrew.png" alt=""></a>
-                                    <a href=""><span>Rick Andrew</span></a>
-                                </div>
-
-                                <div class="inner_ryt flex_row">
-                                    <img class="w_auto" src="assets/calendar.svg" alt="">
-                                    <span>15 Jan 2024</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="view_btn">
-                    <!-- global green button -->
-                    <a href="" class="red_btn global_btn">View All Blogs</a>
-                </div>
             </div>
 
         </section>
-
-        <!-- global_kitchen_chronicles -->
-        <section class="global_kitchen_chronicles">
-            <div class="kitchen_chronicles_container container_1200 flex_row">
-                <div class="inner_container flex_row">
-                    <!-- left_container -->
-                    <div class="inner_lft_col flex_column">
-                        <h2>Kitchen Chronicles:From Our Home to Yours</h2>
-                        <p>Indulge in the rich and creamy flavors of our featured recipe. Perfect for a cozy dinner,
-                            this
-                            risotto is a blend of simplicity and sophistication. Follow our step-by-step guide and
-                            become a
-                            risotto master!</p>
-
-                        <!-- global red button -->
-                        <form action="" class="flex_row">
-                            <input type="email" placeholder="Enter Your E-mail">
-                            <!-- global green button -->
-                            <button class="red_btn global_btn">Subscribe Now</button>
-                        </form>
-                        <button class="red_btn global_btn">Subscribe Now</button>
-
-                    </div>
-                    <!-- ryt_container -->
-                    <div class="inner_ryt_col">
-                        <img src="assets/kitchen_chronicles.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- global_kitchen_chronicles -->
+        <!-- blog_page_sec_1 -->
 
         <!-- global_product_review -->
         <section class="global_product_review">
@@ -421,103 +641,17 @@
         </section>
         <!-- global_product_review -->
 
-        <!-- global_recommended_product -->
-        <section class="global_recomm_prodct_reviews">
-            <div class="recomm_prodct_container container_1200 flex_column">
-                <div class="global_txt_horline flex_row">
-                    <span>Recommended Product</span>
-                    <div class="hrline"></div>
-                </div>
-                <!-- lower_content -->
-                <div class="inner_col_container flex_row">
-                    <!-- left content -->
-                    <div class="l_content">
-                        <img class="w_auto" src="assets/recommend_product.png" alt="">
-                    </div>
-                    <!-- right content -->
-                    <div class="r_content flex_column">
-                        <div class="global_stars_rating flex_row">
-                            <div class="stars flex_row">
-                                <img src="assets/full_star.svg" alt="">
-                                <img src="assets/full_star.svg" alt="">
-                                <img src="assets/full_star.svg" alt="">
-                                <img src="assets/full_star.svg" alt="">
-                                <img src="assets/star-half.svg" alt="">
-                            </div>
-                            <div class="global_rating">
-                                (5/5)
-                            </div>
-                        </div>
-
-                        <div class="brand_nd_product flex_row">
-                            <div class="brand_name flex_row">
-                                <img class="w_auto" src="assets/tabler_brand-nexo.svg" alt="">
-                                <span>Brand Name</span>
-                            </div>
-
-                            <div class="product_name flex_row">
-                                <img class="w_auto" src="assets/shield-outline.svg" alt="">
-                                <span>Product Name</span>
-                            </div>
-
-                        </div>
-
-                        <p>Introduction to the concept of stove shields and their importance in kitchen safety. Discuss
-                            various benefits such as preventing grease splatter, as selecting the right stove shield for
-                            specific needs, understanding the various benefits.</p>
-
-                        <div class="price_container flex_row">
-                            <div class="cross_price">$324</div>
-                            <div>$224</div>
-                        </div>
-
-
-                        <div class="faq_sec">
-                            <div class="accordion_card">
-                                <ul class="read_pros flex_row">
-                                    <li>Read Pros :</li>
-                                    <li><img class="w_auto rotate_180" src="assets/down_arrow_red.svg" alt=""></li>
-                                </ul>
-                                <ul class="faq_content">
-                                    <li>Reduces the risk of kitchen fires</li>
-                                    <li>Reduces the risk of kitchen fires</li>
-                                    <li>Reduces the risk of kitchen fires</li>
-                                    <li>Reduces the risk of kitchen fires</li>
-                                </ul>
-                            </div>
-
-                            <div class="accordion_card">
-                                <ul class="read_cons flex_row">
-                                    <li>Read Cons :</li>
-                                    <li> <img class="w_auto rotate_180" src="assets/down_arrow_red.svg" alt=""></li>
-                                </ul>
-                                <ul class="faq_content">
-                                    <li>Reduces the risk of kitchen fires</li>
-                                    <li>Reduces the risk of kitchen fires</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-        <!-- global_recommended_product -->
-
         <!-- global_faq_sec start -->
         <section class="faq_sec">
             <div class="faq_container container_1200 flex_column">
 
                 <div class="inner_faq_accordion_wrapper flex_column">
-                      <!-- global_txt_hor_line -->
-                <div class="global_txt_horline flex_row">
-                    <h2>Frequently Asked Questions</h2>
-                    <div class="hrline"></div>
-                </div>
+                    <!-- global_txt_hor_line -->
+                    <div class="global_txt_horline flex_row">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="hrline"></div>
+                    </div>
+
                     <div class="accordion_card active flex_row">
                         <!-- left content  -->
                         <div class="inner_content flex_column">
@@ -590,165 +724,39 @@
         </section>
         <!-- global_faq_sec end -->
 
-        <!-- add_global_Most_read_articles -->
-        <div class="global_most_read_post global_latest_article ">
-            <div class="global_most_read_container flex_column">
-                <!-- advertisement -->
-                <img width="w_auto" src="assets/advert.png" alt="">
-                <!-- Most_read_article -->
-                <div class="inner_most_read_wrapper flex_column">
-                    <!-- global_txt_hor_line -->
-                    <div class="global_txt_horline flex_row">
-                        <span>Most Read</span>
-                        <div class="hrline"></div>
-                    </div>
+        <!-- global_kitchen_chronicles -->
+        <section class="global_kitchen_chronicles">
+            <div class="kitchen_chronicles_container container_1200 flex_row">
+                <div class="inner_container flex_row">
+                    <!-- left_container -->
+                    <div class="inner_lft_col flex_column">
+                        <h2>Kitchen Chronicles:From Our Home to Yours</h2>
+                        <p>Indulge in the rich and creamy flavors of our featured recipe. Perfect for a cozy dinner,
+                            this
+                            risotto is a blend of simplicity and sophistication. Follow our step-by-step guide and
+                            become a
+                            risotto master!</p>
 
-                    <div class="inner_articles_wrapper grid_row">
-                        <!-- article_1 -->
-                        <div class="article_post_wrap flex_row">
-                            <div class="artic_img">
-                                <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
-                            </div>
-                            <div class="inner_col_2 flex_column">
-
-                                <div class="inner_txt_content flex_column">
-                                    <a href=""><span>Kitchen</span></a>
-                                    <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- article_1 -->
-                        <div class="article_post_wrap flex_row">
-                            <div class="artic_img">
-                                <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
-                            </div>
-                            <div class="inner_col_2 flex_column">
-
-                                <div class="inner_txt_content flex_column">
-                                    <a href=""><span>Kitchen</span></a>
-                                    <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- article_1 -->
-                        <div class="article_post_wrap flex_row">
-                            <div class="artic_img">
-                                <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
-                            </div>
-                            <div class="inner_col_2 flex_column">
-
-                                <div class="inner_txt_content flex_column">
-                                    <a href=""><span>Kitchen</span></a>
-                                    <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- article_1 -->
-                        <div class="article_post_wrap flex_row">
-                            <div class="artic_img">
-                                <a href=""><img class="w_auto" src="assets/most_read.png" alt=""></a>
-                            </div>
-                            <div class="inner_col_2 flex_column">
-
-                                <div class="inner_txt_content flex_column">
-                                    <a href=""><span>Kitchen</span></a>
-                                    <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <!-- global red button -->
+                        <form action="" class="flex_row">
+                            <input type="email" placeholder="Enter Your E-mail">
+                            <!-- global green button -->
+                            <button class="red_btn global_btn">Subscribe Now</button>
+                        </form>
+                        <button class="red_btn global_btn">Subscribe Now</button>
 
                     </div>
-
+                    <!-- ryt_container -->
+                    <div class="inner_ryt_col">
+                        <img src="assets/kitchen_chronicles.png" alt="">
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-
-        <!-- global_latest_post_component -->
-        <div class="global_latest_post_container global_latest_article flex_column">
-            <!-- global_txt_hor_line -->
-            <div class="global_txt_horline flex_row">
-                <span>Latest Post</span>
-                <div class="hrline"></div>
-            </div>
-            <!-- inner_latest_post_wrapper -->
-           <div class="inner_articles_wrapper grid_row">
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_1.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                          
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_2.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Kitchen Design Trends for 2024: What's Hot and What's Not</a>
-                            </div>
-                           
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_3.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                           
-                        </div>
-
-                    </div>
-                    <!-- article_1 -->
-                    <div class="article_post_wrap flex_column">
-                        <div class="artic_img">
-                            <a href=""><img src="assets/artic_4.png" alt=""></a>
-                        </div>
-                        <div class="inner_col_2 flex_column">
-
-                            <div class="inner_txt_content flex_column">
-                                <a href=""><span>Kitchen</span></a>
-                                <a href="">Top 5 Time-Saving Hacks for a More Efficient Kitchen</a>
-                            </div>
-                          
-                        </div>
-
-                    </div>
-
-                </div>
-
-        </div>
+        </section>
+        <!-- global_kitchen_chronicles -->
 
     </main>
-
     <footer>
         <div class="inner_container container_1200 flex_row">
             <div class="col_1 flex_column">
@@ -998,35 +1006,6 @@
             <p>2024 @ All Rights Reserved. Stove Top Protector Blog</p>
         </div> -->
     </footer>
-
-    <br>
-
-     <!-- breadcrumbs -->
-     <nav class="breadcrumb_container container_1200  flex_row">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="" href="index.html">Home</a></li>
-            <span> </span>
-            <li class="breadcrumb-item"><a class="" href="blog_page.html">Blog Page</a></li>
-        </ol>
-    </nav>
-
-    <br>
-
-    <!-- global_txt_hor_line -->
-    <div class="global_txt_horline flex_row">
-        <span>Latest Articles</span>
-        <div class="hrline"></div>
-    </div>
-
-    <br>
-
-    <!-- global red button -->
-    <a href="" class="red_btn global_btn">Subscribe</a>
-
-    <br>
-    <!-- global white button -->
-    <a href="" class="white_btn global_btn">Subscribe</a>
-    <br>
 </body>
 
 </html>
