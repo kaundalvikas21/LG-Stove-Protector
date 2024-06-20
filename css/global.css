@@ -9,7 +9,7 @@
 
 :root {
   --primary_heading_clr: #ea1717;
-  --secondary_head_clr: #2c2c2d;
+  --secondary_head_clr: #2C2C2D;
   --solid_white_clr: #ffffff;
   --white_txt_bg_clr: #f4f4f4;
   --para_clr: #666666;
@@ -573,6 +573,7 @@ header .ryt_content_wrapper .header_btn {
   gap: 3rem; */
   padding-block: 3rem;
   background-color: var(--white_txt_bg_clr);
+  width: 100%;
 }
 
 .faq_sec .faq_container .global_txt_horline {
@@ -584,6 +585,7 @@ header .ryt_content_wrapper .header_btn {
   color: var(--primary_heading_clr);
   position: relative;
   font-family: var(--oswald_font-family);
+  font-weight: 500;
 }
 
 .faq_sec .inner_faq_accordion_wrapper {
@@ -811,8 +813,8 @@ footer>.inner_container .inner_social_link_col>a {
 
 footer .social_icons_container a:hover path {
   fill: color-mix(in hsl shorter hue,
-      rgba(237, 228, 109, 0.909) 100%,
-      rgba(236, 226, 95, 0.963) 100%);
+      rgba(244, 244, 244, 0.909) 100%,
+      rgba(244, 244, 244, 0.541) 100%);
 }
 
 /* footer > .divider {
@@ -847,7 +849,7 @@ footer > .copyright_col {
   .mobile_footer {
     display: flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     padding-top: 3rem;
   }
 
