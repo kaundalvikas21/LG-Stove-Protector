@@ -267,7 +267,12 @@ header .nav_bar_wrapper ul li a:hover {
 header .ryt_content_wrapper .header_btn {
   padding: 12px 25px;
 }
-
+.mobile_header{
+  display: none;
+}
+.menu_off_canvas {
+  display: none;
+}
 /*--------- header_css end ---------*/
 
 /*------ global_latest_article start------*/
@@ -379,6 +384,9 @@ header .ryt_content_wrapper .header_btn {
 /*------- global_kitchen_chronicles end -------*/
 
 /*------- global_product_review start -------*/
+.global_product_review .carousal_btn{
+  display: none;
+}
 .global_product_review .product_review_container {
   gap: 3rem;
 }
@@ -751,11 +759,6 @@ footer>.inner_container .inner_li_columns_wrap .col_1:nth-child(2) {
   max-width: max-content;
 }
 
-/* footer > .inner_container .col_1 h4 {
-  color: var(--white_txt_bg_clr);
-  letter-spacing: 0.06em;
-  font-weight: 500;
-} */
 footer>.inner_container .col_1 span {
   color: var(--white_txt_bg_clr);
   letter-spacing: 0.06em;
@@ -817,7 +820,7 @@ footer .social_icons_container a:hover path {
       rgba(244, 244, 244, 0.541) 100%);
 }
 
-/* footer > .divider {
+footer > .divider {
   background-color: #ffffff33;
   display: block;
   height: 1px;
@@ -828,20 +831,178 @@ footer > .copyright_col {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 3rem;
+  padding: 1.5rem 0 3rem;
   color: var(--solid_white_clr);
-} */
+  border-top: 1px solid var(--solid_white_clr);
+  text-align: center;
+}
 .mobile_footer {
   display: none;
 }
 
 /*--------------- Mobile_screen_css start ---------------*/
 @media screen and (max-width: 480px) {
+  /* global_css */
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
   section {
     margin-bottom: 3rem;
   }
+  main {
+    margin-top: 6rem;
+}
 
-  /* mobile footer */
+/* global_css end */
+
+/* component_css start */
+  header .header_container{
+    display: none ;
+  }
+  .mobile_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+  }
+
+  /* menu_off_canvas_css */
+  .menu_off_canvas {
+    display: block;
+    max-width: 240px;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--solid_white_clr);
+    padding: 2rem 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 1002;
+  }
+
+  .menu_off_canvas.open {
+    transform: translateX(0);
+  }
+
+  .menu_off_canvas .menu_inner_wrapper {
+    gap: 2rem;
+  }
+  .menu_off_canvas .heading_row {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .menu_off_canvas .lists_stove_protect ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .menu_off_canvas .lists_stove_protect ul li {
+    list-style: none;
+    color: #000000;
+  }
+  .menu_off_canvas .lists_stove_protect ul li a {
+    color: var(--secondary_head_clr);
+    font-size: 1.125rem;
+  }
+  .menu_off_canvas .lists_stove_protect ul li a:hover {
+    color: var(--primary_heading_clr);
+  }
+  .menu_off_canvas .lists_stove_protect ul li:last-child {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .menu_off_canvas .lists_stove_protect ul li:last-child img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .overlay {
+    position: fixed;
+    min-height: 100vh;
+    background-color: rgba(48, 48, 48, 0.192);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    display: none;
+  }
+  .overlay.open_overlay {
+    display: block;
+  }
+
+
+  .global_latest_article .inner_articles_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.8rem;
+  }
+  .global_latest_article .article_post_wrap .artic_img a,
+  .global_latest_article .article_post_wrap .artic_img img {
+    width: 100%;
+  }
+  .global_kitchen_chronicles .inner_container{
+    flex-direction: column-reverse;
+    padding: 2rem 2rem;
+  }
+  .global_product_review .inner_review_card_wrapper{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .global_product_review .product_review{
+    max-width: 100%;
+ 
+  }
+  .global_product_review .product_img a, .global_product_review .product_img img{
+    width: 100%;
+  }
+
+  .global_product_review .carousal_btn{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.25rem;
+  }
+  .global_product_review .carousal_btn button {
+    background-color: inherit;
+    border: none;
+  }
+  .global_recomm_prodct_reviews .inner_col_container{
+    flex-direction: column;
+  }
+  .global_recomm_prodct_reviews .inner_col_container .l_content,
+  .global_recomm_prodct_reviews .inner_col_container .l_content>img{
+    width: 100%;
+  }
+  .global_most_read_post .global_most_read_container{
+    display: none;
+  }
+
+
+
+  
+  /*----------- mobile footer -----------*/
   footer>.inner_container {
     display: none;
   }
@@ -857,11 +1018,6 @@ footer > .copyright_col {
     gap: 1rem;
   }
 
-  /* .mobile_footer .col_1 h5 {
-    color: var(--solid_white_clr);
-    font-weight: 500;
-    font-size: 1.25rem;
-  } */
   .mobile_footer .col_1 p {
     color: var(--white_txt_bg_clr);
   }
@@ -878,15 +1034,16 @@ footer > .copyright_col {
   }
 
   .mobile_footer .social_icons_container {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .mobile_footer .inner_social_link_col {
-    gap: 0.75rem;
+    gap: 1.25rem;
+    align-items: center;
   }
 
   .mobile_footer .inner_social_link_col .btn>a {
-    padding: 0.85rem 2.188rem 0.85rem 0.85rem;
+    padding: 0.85rem 5.188rem 0.85rem 0.85rem;
     background-color: var(--primary_heading_clr);
     color: var(--white_txt_bg_clr);
     border: 1px solid var(--white_txt_bg_clr);
@@ -895,15 +1052,17 @@ footer > .copyright_col {
   }
 
   .mobile_footer .inner_social_link_col .mobile_btn_wrap>a {
-    padding: 10px 25px;
+    padding: 8px 25px;
   }
 
   .mobile_footer .inner_social_link_col .mobile_btn_wrap {
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    /* width: 75%; */
   }
+  .mobile_footer .social_icons_container svg {
+    width: 24px;
+    height: 24px;
+}
 
   .mobile_footer .inner_li_columns_wrap {
     gap: 1rem;
@@ -917,7 +1076,7 @@ footer > .copyright_col {
 
   .mobile_footer .li_column a {
     color: var(--solid_white_clr);
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
