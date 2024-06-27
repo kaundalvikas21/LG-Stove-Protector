@@ -384,9 +384,6 @@ header .ryt_content_wrapper .header_btn {
 /*------- global_kitchen_chronicles end -------*/
 
 /*------- global_product_review start -------*/
-.global_product_review .carousal_btn{
-  display: none;
-}
 .global_product_review .product_review_container {
   gap: 3rem;
 }
@@ -450,6 +447,9 @@ header .ryt_content_wrapper .header_btn {
 
 .global_product_review .inner_col_2>a {
   padding: 0.625rem 1.5rem;
+}
+.carousal_btn{
+display: none;
 }
 
 /*------- global_product_review end -------*/
@@ -964,7 +964,10 @@ footer > .copyright_col {
   }
   .global_kitchen_chronicles .inner_container{
     flex-direction: column-reverse;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
+  }
+  .global_kitchen_chronicles form>button{
+    white-space: nowrap;
   }
   .global_product_review .inner_review_card_wrapper{
     flex-direction: column;
@@ -978,13 +981,13 @@ footer > .copyright_col {
     width: 100%;
   }
 
-  .global_product_review .carousal_btn{
+   .carousal_btn{
     display: inline-flex;
     justify-content: center;
     width: 100%;
     gap: 1.25rem;
   }
-  .global_product_review .carousal_btn button {
+   .carousal_btn button {
     background-color: inherit;
     border: none;
   }
@@ -997,6 +1000,9 @@ footer > .copyright_col {
   }
   .global_most_read_post .global_most_read_container{
     display: none;
+  }
+  .global_recomm_prodct_reviews .r_content {
+    padding: 1rem 1rem 1rem 1rem;
   }
 
 

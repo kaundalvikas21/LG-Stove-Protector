@@ -102,6 +102,7 @@
 .index_sec_2 .inner_feature_post:hover .inner_txt a {
   color: var(--primary_heading_clr);
 }
+
 /*------- index_pg_sec_2_css end -------*/
 
 /* Mobile_responsiveness start */
@@ -134,5 +135,5 @@
   .index_sec_2 .inner_feature_post .img_1 > a {
     width: 100%;
   }
- 
+
 }

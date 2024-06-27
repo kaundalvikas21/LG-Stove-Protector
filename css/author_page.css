@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  margin-bottom: 6rem;
 }
 
 .main_container .lft_col_wrapper {
@@ -149,4 +150,23 @@
 .author_sec_1 .faq_col .global_heading a:nth-of-type(1),
 .author_sec_1 .faq_col  .global_heading a:nth-of-type(2) {
   color: var(--secondary_head_clr);
+}
+
+/* mobile responsiveness start */
+@media screen and (max-width: 480px){
+  .main_container {
+  flex-direction: column-reverse;
+  margin-bottom: 3rem;
+  }
+  .author_sec_1 .global_latest_article .inner_articles_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem
+}
+.main_container .lft_col_wrapper{
+  max-width: 100%;
+}
+.main_container .lft_col_wrapper .inner_col_1 .social_links{
+  margin-inline: 0;
+  max-width: 200px;
+}
 }
