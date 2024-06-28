@@ -953,7 +953,6 @@ footer > .copyright_col {
     display: block;
   }
 
-
   .global_latest_article .inner_articles_wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 2.8rem;
